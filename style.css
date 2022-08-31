@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(210, 46%, 95%);
+}
+.component{
+    margin: 50px;
+}
+.section-one{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.section-two{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+.card-one{
+    background:hsl(263, 55%, 52%) ;
+    width: fit-content;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 80px top 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.images{
+    border-radius: 50%;
+    width: 30px;
+}
+.details{
+    display: flex;
+    gap: 15px;
+}
+.text{
+    margin-top: 15px;
+}
+.name-one{
+    color:hsl(210, 46%, 95%);
+}
+.verified-one{
+    color:hsl(0, 0%, 100%)
+    ;
+    opacity: 50%;
+}
+.name-two{
+    color:  hsl(219, 29%, 14%);
+}
+.verified-two{
+    color: hsl(217, 19%, 35%);
+    opacity: 50%;
+} 
+.card-two{
+    background: hsl(219, 29%, 14%) ;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card-three{
+    background: hsl(0, 0%, 100%);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 30px;
+}
+.card-four{
+    background:hsl(217, 19%, 35%) ;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.card-five{
+    position: absolute;
+    top: 48px;
+    left:1030px;
+    background:hsl(0, 0%, 100%) ;
+    width: fit-content;
+    border-radius: 10px;
+    padding:20px;
+}
+@media (max-width:600px) {
+    .component{
+        display: block;
+        overflow: scroll;
+        align-items: center;
+    }
+    .section-one{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-two{
+        display: block;
+        justify-content: center;
+        margin-top: -1px;
+    }
+    .card-two{
+        min-width:363px;
+    }
+    .card-three{
+        min-width: 363px;
+    }
+    .card-five{
+        position: static;
+        display: block;
+        justify-content: center;
+        min-width: 363px;
+    }
+
+    
+}
+
